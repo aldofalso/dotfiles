@@ -6,13 +6,6 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango: Monospace 9
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -157,27 +150,27 @@ bar {
 		position top
 }
 
-#autoexec
-exec feh --bg-scale /home/aldo/wallpapers/a.jpg
+# Autoexec
+exec feh --bg-scale /home/aldo/wallpapers/wall.jpg
 exec setxkbmap -layout it
 exec rofi
 exec --no-startup-id volumeicon
-exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift
+exec --no-startup-id picom
 new_window pixel 1
 
-#hotkeys
-bindsym $mod+Pause exec systemctl suspend
+# Hotkeys
+bindsym $mod+Pause exec --no-startup-id systemctl suspend, mode "default"
 
-#Set inner/outer gaps
-gaps inner 10
-gaps outer 20
+# Set inner/outer gaps
+gaps inner 15
+gaps outer 15
 smart_gaps on
 
-#Theme colors
-#class                   border  backgr   text   indic 
-client.focused          #DB5DAF #DB5DAF #05070B #DB5DAF
-client.focused_inactive #DB5DAF #05070B #AD69AF #DB5DAF
-client.unfocused        #DB5DAF #05070B #AD69AF #DB5DAF
-client.urgent           #DB5DAF #05070B #AD69AF #DB5DAF
+# Theme colors
+#class                   border  backgr   text   indic
+client.focused          #69A3EA #69A3EA #05070B #69A3EA
+client.focused_inactive #69A3EA #05070B #69A3EA #69A3EA
+client.unfocused        #69A3EA #05070B #69A3EA #69A3EA
+client.urgent           #69A3EA #05070B #69A3EA #69A3EA
 client.placeholder      #000000 #0c0c0c #ffffff #000000
