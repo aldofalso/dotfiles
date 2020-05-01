@@ -1,10 +1,9 @@
-!--------------------xdefauls
 URxvt.font: xft:Monospace:pixelsize=13
 urxvt*termName: rxvt
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
 urxvt.transparent: false
-urxvt.boldFont: 
+urxvt.boldFont:
 URxvt.letterSpace: -1
 Xft*dpi: 96
 Xft*antialias: true
@@ -16,41 +15,42 @@ URxvt*geometry: 85x20
 *internalBorder: 26
 URxvt*fading: 0
 URxvt*tintColor: #ffffff
-URxvt*shading: 0
+URxvt*shading: 30
 URxvt*inheritPixmap: False
+
 ! special
 *.foreground:   #f1fcf8
-*.background:   #05070B
-*.cursorColor:  #f1fcf8
+*.background:   #030406
+*.cursorColor:  #5B9BEA
 
 ! black
-*.color0:       #181c20
-*.color8:       #c590d7
+*.color0:       #000000
+*.color8:       #ef98e9
 
 ! red
-*.color1:       #20252a
-*.color9:       #8d54a1
+*.color1:       #0b1212
+*.color9:       #e94de1
 
 ! green
-*.color2:       #2f363c
-*.color10:      #c89bd8
+*.color2:       #1b2525
+*.color10:      #f3a8ee
 
 ! yellow
-*.color3:       #444e56
-*.color11:      #b788c7
+*.color3:       #2f3f3e
+*.color11:      #a463c8
 
 ! blue
-*.color4:       #5f6b76
-*.color12:      #7bb1d9
+*.color4:       #4a605f
+*.color12:      #cf8ee6
 
 ! magenta
-*.color5:       #7e8e9c
-*.color13:      #79b5de
+*.color5:       #6a8787
+*.color13:      #e468dd
 
 ! cyan
-*.color6:       #a5b7c7
-*.color14:      #b685c7
+*.color6:       #8fb6b6
+*.color14:      #6189d4
 
 ! white
-*.color7:       #dde3e9
-*.color15:      #c5909c
+*.color7:       #baeceb
+*.color15:      #87a4d9
