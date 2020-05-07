@@ -166,11 +166,3 @@ bindsym $mod+Pause exec --no-startup-id systemctl suspend, mode "default"
 gaps inner 15
 gaps outer 15
 smart_gaps on
-
-# Theme colors
-#class                   border  backgr   text   indic
-client.focused          #69A3EA #69A3EA #05070B #69A3EA
-client.focused_inactive #69A3EA #05070B #69A3EA #69A3EA
-client.unfocused        #69A3EA #05070B #69A3EA #69A3EA
-client.urgent           #69A3EA #05070B #69A3EA #69A3EA
-client.placeholder      #000000 #0c0c0c #ffffff #000000
