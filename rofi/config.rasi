@@ -3,7 +3,7 @@
     foreground:                  rgba ( 193, 193, 193, 100 % );
     normal-foreground:           @foreground;
     alternate-normal-foreground: @foreground;
-    border-color:                 #69A3EA;
+    border-color:                 #285577;
     spacing:                     2;
     separatorcolor:              rgba ( 30, 37, 41, 100 % );
     background-color:            rgba ( 0, 0, 0, 0 % );
@@ -46,20 +46,20 @@
     text-color:       @urgent-foreground;
 }
 #element.normal.active {
-    background-color:  #69A3EA;
+    background-color:  #285577;
     text-color:       @active-foreground;
 }
 #element.selected.normal {
     background-color:  #05070B;
-    text-color:       #69A3EA;
+    text-color:       #285577;
 }
 #element.selected.urgent {
-    background-color:  #69A3EA;
-    text-color:       #69A3EA;
+    background-color:  #285577;
+    text-color:       #285577;
 }
 #element.selected.active {
-    background-color:  #69A3EA;
-    text-color:       #69A3EA;
+    background-color:  #285577;
+    text-color:       #285577;
 }
 #element.alternate.normal {
     background-color:  #05070B;
@@ -67,11 +67,11 @@
 }
 #element.alternate.urgent {
     background-color:  #DB5DAF;
-    text-color:       #69A3EA;
+    text-color:       #285577;
 }
 #element.alternate.active {
     background-color:  #05070B;
-    text-color:       #69A3EA;
+    text-color:       #285577;
 }
 #scrollbar {
     width:        4px ;
@@ -94,15 +94,15 @@
 }
 #case-indicator {
     spacing:    0;
-    text-color: #69A3EA;
+    text-color: #285577;
 }
 #entry {
     spacing:    0;
-    text-color: #69A3EA;
+    text-color: #285577;
 }
 #prompt {
     spacing:    0;
-    text-color: #69A3EA;
+    text-color: #285577;
 }
 #inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
@@ -111,5 +111,5 @@
     expand:     false;
     str:        ":";
     margin:     0px 0.3em 0em 0em ;
-    text-color: #69A3EA;
+    text-color: #285577;
 }
