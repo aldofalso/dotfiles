@@ -151,7 +151,6 @@ bar {
 # Autoexec
 exec feh --bg-scale /home/aldo/wallpapers/wall.jpg
 exec setxkbmap -layout it
-exec rofi
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
 exec --no-startup-id picom
