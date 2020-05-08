@@ -1,3 +1,3 @@
 # i3-config
 
-![2020-05-08-154653_1920x1080_scrot](https://user-images.githubusercontent.com/45566380/81411989-6f0a3e00-9143-11ea-8f44-04153b3529da.png)
+![2020-05-08-172047_1920x1080_scrot](https://user-images.githubusercontent.com/45566380/81421432-c57e7900-9151-11ea-9640-305ad6e88ff8.png)
