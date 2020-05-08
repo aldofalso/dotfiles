@@ -24,33 +24,33 @@ URxvt*inheritPixmap: False
 *.cursorColor:  #f1fcf8
 
 ! black
-*.color0:       #000000
-*.color8:       #ef98e9
+*.color0:       #030404
+*.color8:       #6aacf5
 
 ! red
-*.color1:       #0b1212
-*.color9:       #e94de1
+*.color1:       #111314
+*.color9:       #539bea
 
 ! green
-*.color2:       #1b2525
-*.color10:      #f3a8ee
+*.color2:       #222526
+*.color10:      #4d8cd4
 
 ! yellow
-*.color3:       #2f3f3e
-*.color11:      #a463c8
+*.color3:       #393e3f
+*.color11:      #4481c7
 
 ! blue
-*.color4:       #4a605f
-*.color12:      #cf8ee6
+*.color4:       #575e60
+*.color12:      #326fb2
 
 ! magenta
-*.color5:       #6a8787
-*.color13:      #e468dd
+*.color5:       #7b8587
+*.color13:      #366eac
 
 ! cyan
-*.color6:       #8fb6b6
-*.color14:      #6189d4
+*.color6:       #a4b2b5
+*.color14:      #2b5b93
 
 ! white
-*.color7:       #baeceb
-*.color15:      #87a4d9
+*.color7:       #d6e2e4
+*.color15:      #244b78
