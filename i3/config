@@ -4,9 +4,8 @@ set $mod Mod4
 
 font pango: Monospace 9
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# i3lock
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -u -i /home/aldo/wallpapers/lock.png 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -149,7 +148,7 @@ bar {
 }
 
 # Autoexec
-exec feh --bg-scale /home/aldo/wallpapers/wall.jpg
+exec feh --bg-scale /home/aldo/wallpapers/wall.png
 exec setxkbmap -layout it
 exec --no-startup-id volumeicon
 exec --no-startup-id redshift
