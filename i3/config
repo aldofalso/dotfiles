@@ -158,6 +158,7 @@ new_window pixel 1
 # Hotkeys
 bindsym $mod+Pause exec --no-startup-id systemctl suspend, mode "default"
 bindsym $mod+c exec chromium
+bindsym $mod+t exec telegram-desktop
 
 # Set inner/outer gaps
 gaps inner 15
