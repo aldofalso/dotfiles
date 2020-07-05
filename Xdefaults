@@ -1,4 +1,4 @@
-URxvt.font: xft:Monospace:pixelsize=13
+URxvt.font: xft:Monospace:pixelsize=13.4
 urxvt*termName: rxvt
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
