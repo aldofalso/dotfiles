@@ -2,7 +2,7 @@
 
 set $mod Mod4
 
-font pango: Monospace 9
+font pango: Monospace 9.4
 
 # i3lock
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -u -i /home/aldo/wallpapers/lock.png 
