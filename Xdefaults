@@ -48,8 +48,8 @@ URxvt*inheritPixmap: False
 *.color13:      #b48ead
 
 ! cyan
-*.color6:       #7694b3
-*.color14:      #7694b3
+*.color6:       #88c0d0
+*.color14:      #8fbcbb
 
 ! white
 *.color7:       #e5e9f0
