@@ -2,10 +2,7 @@
 
 set $mod Mod4
 
-font pango: Monospace 9.4
-
-# i3lock
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -u -i /home/aldo/wallpapers/lock.png 
+font pango: Monospace 9.5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -136,9 +133,9 @@ bar {
 
 # Autoexec
 exec feh --bg-scale /home/aldo/wallpapers/wall.png
-exec setxkbmap -layout it
+exec setxkbmap it
 exec --no-startup-id volumeicon
-exec --no-startup-id redshift
+exec --no-startup-id redshift -l 41.901571:12.498313
 exec --no-startup-id picom
 new_window pixel 1
 
@@ -146,19 +143,7 @@ new_window pixel 1
 bindsym $mod+c exec firefox
 bindsym $mod+t exec telegram-desktop
 bindsym $mod+Print exec scrot
-
-# Set shut down, restart and suspend
-bindsym $mod+Escape mode "$mode_system"
-set $mode_system (s)uspend, (r)eboot, (Shift+s)hutdown
-mode "$mode_system" {
-    bindsym s exec --no-startup-id systemctl suspend, mode "default"
-    bindsym r exec --no-startup-id reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id poweroff, mode "default"
-
-# exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
+bindsym $mod+n exec urxvt -e nnn
 
 # Set inner/outer gaps
 gaps inner 15
