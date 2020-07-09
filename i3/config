@@ -144,6 +144,7 @@ bindsym $mod+c exec firefox
 bindsym $mod+t exec telegram-desktop
 bindsym $mod+Print exec scrot
 bindsym $mod+n exec urxvt -e nnn
+bindsym $mod+Pause exec i3lock -u -i /home/aldo/wallpapers/lock.png
 
 # Set inner/outer gaps
 gaps inner 15
