@@ -146,6 +146,11 @@ bindsym $mod+Print exec scrot
 bindsym $mod+n exec st -e nnn
 bindsym $mod+Pause exec i3lock -u -i /home/aldo/wallpapers/lock.png
 
+# Theme color
+                        border  backgr   text    indic  
+client.focused          #556064 #556064 #ffffff #556064   
+for_window [class=".*"] border pixel 3
+
 # Set inner/outer gaps
 gaps inner 15
 gaps outer 15
