@@ -11,4 +11,4 @@ down_enabled=true
 mute_enabled=true
 up=Page_Up
 down=Page_Down
-mute=End
+mute=Delete
