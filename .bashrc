@@ -1,7 +1,9 @@
-shopt -s autocd
+# .bashrc
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias zzz='sudo systemctl suspend'
+shopt -s autocd
+
 alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
