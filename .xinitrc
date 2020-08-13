@@ -17,9 +17,6 @@ redshift &
 #automount
 devmon &
 
-#dbus
-dbus-launch dwm 
-
 #lock
 xss-lock -- /usr/bin/slock &
 
@@ -56,5 +53,8 @@ while true; do
         xsetroot -name " $(ipaddr)$(mem) $(cputemp) $(cpuload) $(clock) "
    sleep 60s #update time every minute
 done &
+
+#dbus
+dbus-launch --exit-with-session dwm
 
 exec dwm
