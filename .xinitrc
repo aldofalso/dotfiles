@@ -14,9 +14,6 @@ volumeicon &
 #redshift
 redshift &
 
-#automount
-devmon &
-
 #lock
 xss-lock -- /usr/bin/slock &
 
