@@ -21,7 +21,7 @@ cputemp() {
 }
 
 hdd() {
-        printf ""
+        printf ""
         df --output=avail -h "$PWD"  | sed '1d'
 
  }
@@ -40,4 +40,3 @@ while true; do
         xsetroot -name " $(ipaddr)$(mem) $(hdd)$(cputemp) $(cpuload) $(clock) "
    sleep 60s #update time every minute
 done &
-
