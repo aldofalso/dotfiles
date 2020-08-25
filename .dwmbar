@@ -17,8 +17,14 @@ cpuload() {
 cputemp() {
 
         read -r temp </sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
-        echo ${temp%???}°
+        echo " |" ${temp%???}°
 }
+
+hdd() {
+        printf ""
+        df --output=avail -h "$PWD"  | sed '1d'
+
+ }
 
 mem() {
 
@@ -31,7 +37,7 @@ ipaddr(){
 }
 
 while true; do
-        xsetroot -name " $(ipaddr)$(mem) $(cputemp) $(cpuload) $(clock) "
+        xsetroot -name " $(ipaddr)$(mem) $(hdd)$(cputemp) $(cpuload) $(clock) "
    sleep 60s #update time every minute
 done &
 
