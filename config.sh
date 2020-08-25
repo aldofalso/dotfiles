@@ -11,7 +11,7 @@ mkdir /home/aldo/.config/volumeicon
 mkdir /home/aldo/.config/picom/
 mkdir /home/aldo/wallpapers
 
-sudo chmod +x .dwmbar
+chmod +rx .dwmbar
 
 cp /home/aldo/dotfiles/.dwmbar /home/aldo/
 cp /home/aldo/dotfiles/etc/xdg/picom.conf /home/aldo/.config/picom
