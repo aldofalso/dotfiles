@@ -17,6 +17,9 @@ redshift &
 #lock
 xss-lock -- /usr/bin/slock &
 
+#keybinds
+sxhkd &
+
 #dwmbar
 ~/.dwmbar &
 

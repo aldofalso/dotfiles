@@ -1,0 +1,10 @@
+#hotkeys 
+
+#firefox 
+alt + c 
+      firefox
+
+#suspend
+alt + shift + Insert
+      loginctl suspend	
+
