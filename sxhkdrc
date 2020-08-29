@@ -8,3 +8,10 @@ alt + c
 alt + shift + Insert
       loginctl suspend	
 
+#screenshot
+alt + shift + Delete
+      scrot
+
+#calculator
+alt + shift +  backslash
+      galculator
