@@ -4,7 +4,8 @@
 
 sudo xbps-install -Su
 
-sudo xbps-install -S slock dmenu xsetroot xorg-minimal xf86-video-amdgpu xinit xorg-server xss-lock xss-lock vscode volumeicon alsa-utils alsa-lib pcmanfm file-roller gvfs gvfs-mtp feh scrot mpv lxappearance picom dejavu-fonts-ttf redshift gimp libreoffice man android-tools firefox telegram-desktop git youtube-dl ffmpeg xset android-file-transfer-linux cmatrix htop virtualbox-ose bash-completion vim nano lm_sensors font-awesome5 mesa-vaapi mesa-vdpau vulkan-loader amdvlk NetworkManager curl elogind sxhkd
+
+sudo xbps-install -S slock dmenu xsetroot xorg-minimal xf86-video-amdgpu xinit xorg-server xss-lock xss-lock vscode volumeicon alsa-utils alsa-lib pcmanfm file-roller gvfs gvfs-mtp feh scrot mpv lxappearance picom dejavu-fonts-ttf redshift gimp libreoffice man android-tools chromium telegram-desktop git youtube-dl ffmpeg psmisc xset android-file-transfer-linux cmatrix htop virtualbox-ose bash-completion vim nano lm_sensors font-awesome5 mesa-vaapi mesa-vdpau vulkan-loader amdvlk NetworkManager curl elogind sxhkd xorg-input-drivers
 
 mkdir /home/aldo/.config/redshift/
 mkdir /home/aldo/.config/volumeicon/
