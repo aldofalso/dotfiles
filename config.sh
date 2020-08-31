@@ -13,13 +13,12 @@ mkdir /home/aldo/.config/picom/
 mkdir /home/aldo/wallpapers/
 
 cp /home/aldo/dotfiles/.dwmbar /home/aldo/
-cp /home/aldo/dotfiles/etc/xdg/picom.conf /home/aldo/.config/picom
 cp /home/aldo/dotfiles/.xinitrc /home/aldo/
 cp /home/aldo/dotfiles/.bashrc /home/aldo/
+cp /home/aldo/dotfiles/config/picom/picom.conf /home/aldo/.config/picom/
 cp /home/aldo/dotfiles/config/redshift/redshift.conf /home/aldo/.config/redshift
 cp /home/aldo/dotfiles/config/volumeicon/volumeicon /home/aldo/.config/volumeicon
 cp /home/aldo/dotfiles/wallpapers/wall.jpg /home/aldo/wallpapers/
 cp /home/aldo/dotfiles/sxhkdrc /home/aldo/.config/sxhkd/
-
 
 chmod +rx /home/aldo/.dwmbar
