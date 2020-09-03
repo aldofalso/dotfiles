@@ -8,9 +8,6 @@ feh --bg-scale /home/aldo/wallpapers/wall.jpg &
 #picom
 picom &
 
-#volumeicon
-volumeicon &
-
 #redshift
 redshift &
 
