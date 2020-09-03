@@ -14,6 +14,11 @@ weather() {
         printf "%s" "" " $weather"
 }
 
+volume() {
+
+        VOL=$(amixer -M get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
+	printf " %s%%" "$VOL"
+}
 
 cpuload() {
 
@@ -45,6 +50,6 @@ ipaddr(){
 }
 
 while true; do
-        xsetroot -name " $(ipaddr)| $(mem) | $(hdd) | $(cputemp) | $(cpuload) | $(weather) | $(clock) "
+	xsetroot -name " $(ipaddr)| $(mem) | $(hdd) | $(cputemp) | $(cpuload) | $(volume) | $(weather) | $(clock) "
    sleep 60s #update time every minute
 done &

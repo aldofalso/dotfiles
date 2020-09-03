@@ -1,14 +1,21 @@
-#hotkeys 
+#hotkeys
 
-#firefox 
-alt + c 
+#browser
+alt + c
       chromium
 
 #suspend
 alt + shift + Insert
-      loginctl suspend	
+      loginctl suspend
 
 #screenshot
 alt + shift + Delete
       scrot
 
+#increase volume
+alt + {equal,plus}
+        amixer sset Master 5%+
+
+#decrease volume
+alt + {_,shift +} + minus
+        amixer sset Master 5%-
