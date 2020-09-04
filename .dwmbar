@@ -2,41 +2,41 @@
 ##
 # ~/.dwmbar
 
-clock() {
+clock(){
 
-        clock="$(date +"%Y %b %d (%a) %I:%M %p")"
+        clock=$(date)
         echo $clock
 }
 
-volume() {
+volume(){
 
 	VOL=$(amixer -M get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
 	printf "Vol %s%%" "$VOL"
 }
 
-cpuload() {
+cpuload(){
 
         read -r load x </proc/loadavg
         echo "$load%"
 }
 
-cputemp() {
+cputemp(){
 
         read -r temp </sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
         echo ${temp%???}°
 }
 
-mem() {
+mem(){
 
-        free -m | awk 'NR==2{printf"%s/%sMB (%.2f%%)", $3,$2,$3*100/$2 }'
+        free -m | awk 'NR==2{printf"%s/%sMB",$3,$2,$3*100/$2}'
 }
 
-ipaddr(){
+network(){
 
         ip addr show wlp3s1|grep inet |head -1 | awk '{print$2}'
 }
 
 while true; do
-        xsetroot -name " $(ipaddr) | $(mem) | $(cputemp) | $(cpuload) | $(volume) | $(clock) "
-   sleep 60s #update time every minute
+        xsetroot -name " $(network) | $(mem) | $(cputemp) | $(cpuload) | $(volume) | $(clock) "
+   sleep 1s
 done &
