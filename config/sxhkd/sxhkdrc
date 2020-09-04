@@ -13,9 +13,13 @@ alt + shift + Delete
       scrot
 
 #increase volume
-alt + {equal,plus}
+alt + Page_Up
         amixer sset Master 5%+
 
 #decrease volume
-alt + {_,shift +} + minus
+alt + Page_Down
         amixer sset Master 5%-
+
+#mute
+alt + Delete 
+      {amixer sset Master mute, amixer sset Master unmute}
