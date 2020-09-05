@@ -10,8 +10,8 @@ clock(){
 
 volume(){
 
-	VOL=$(amixer -M get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
-	printf "Vol %s%%" "$VOL"
+        VOL=$(amixer -M get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
+        printf "Vol %s%%" "$VOL"
 }
 
 cpuload(){
@@ -36,7 +36,8 @@ network(){
         ip addr show wlp3s1|grep inet |head -1 | awk '{print$2}'
 }
 
-while true; do
-        xsetroot -name " $(network) | $(mem) | $(cputemp) | $(cpuload) | $(volume) | $(clock) "
-   sleep 1s
-done &
+while true
+do
+       xsetroot -name " $(network) | $(mem) | $(cputemp) | $(cpuload) | $(volume) | $(clock) "
+       sleep 1s
+done
