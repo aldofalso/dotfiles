@@ -39,4 +39,9 @@ sudo xbps-install -Su
   #font in tty
   sudo sed -i 's/#FONT="lat9w-16"/FONT="ter-v32n"/g' /etc/rc.conf
 
+  #suckless
+  git clone https://github.com/aldofalso/dwm
+  git clone https://github.com/aldofalso/st
+  cd st && sudo make clean install && cd .. && cd dwm && sudo make clean install && cd ..
+
  #done
