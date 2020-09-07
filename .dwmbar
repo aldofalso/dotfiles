@@ -10,8 +10,8 @@ clock(){
 
 volume(){
 
-        VOL=$(amixer -M get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
-        printf "Vol %s%%" "$VOL"
+        vol=$(amixer -M get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
+        printf "Vol %s%%" "$vol"
 }
 
 cpuload(){
