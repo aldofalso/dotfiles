@@ -13,7 +13,6 @@ sudo xbps-install -Su
   #cp files
  sudo cp -r /home/aldo/dotfiles/rules/49-nopasswd_global.rules /etc/polkit-1/rules.d/
  sudo cp -r /home/aldo/dotfiles/scripts/dmenulogout /usr/local/bin/
- cp -r /home/aldo/dotfiles/scripts/dwmbar /home/aldo/.config 
  cp -r /home/aldo/dotfiles/.xinitrc /home/aldo/
  cp -r /home/aldo/dotfiles/.bashrc /home/aldo/
  cp -r /home/aldo/dotfiles/config/picom/ /home/aldo/.config/
@@ -37,6 +36,7 @@ sudo xbps-install -Su
   #suckless
   git clone https://github.com/aldofalso/dwm
   git clone https://github.com/aldofalso/st
-  cd st && sudo make clean install && cd .. && cd dwm && sudo make clean install && cd ..
+  git clone https://github.com/aldofalso/slstatus
+  cd st && sudo make clean install && cd .. && cd dwm && sudo make clean install && cd .. && cd slstatus && sudo make clean install && cd cd ~/ 
 
  #done

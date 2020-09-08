@@ -17,14 +17,14 @@ xss-lock -- /usr/bin/slock &
 #keybinds
 sxhkd &
 
-#remove mouse when idle
+#remove cursor when idle
 unclutter &
 
 #dmenuclipboard
 clipmenud &
 
 #dwmbar
-~/.config/dwmbar &
+slstatus &
 
 #dbus
 dbus-launch --exit-with-session dwm

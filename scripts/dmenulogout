@@ -1,4 +1,4 @@
-chosen=$(echo -e "[Cancel]\nSuspend\nPoweroff\nReboot" | dmenu -fn Terminus:size=14.3)
+chosen=$(echo -e "Cancel\nSuspend\nPoweroff\nReboot" | dmenu -fn Terminus:size=14.3)
 
 if [ $chosen = "Suspend" ]; then
 	loginctl suspend
