@@ -12,14 +12,14 @@ sudo xbps-install -Su
 
   #cp files
  sudo cp -r /home/aldo/dotfiles/rules/49-nopasswd_global.rules /etc/polkit-1/rules.d/
- sudo cp -r /home/aldo/dotfiles/scripts/dmenulogout /usr/bin/
- cp -r /home/aldo/dotfiles/.dwmbar /home/aldo/ 
+ sudo cp -r /home/aldo/dotfiles/scripts/dmenulogout /usr/local/bin/
+ cp -r /home/aldo/dotfiles/scripts/dwmbar /home/aldo/.config 
  cp -r /home/aldo/dotfiles/.xinitrc /home/aldo/
  cp -r /home/aldo/dotfiles/.bashrc /home/aldo/
  cp -r /home/aldo/dotfiles/config/picom/ /home/aldo/.config/
  cp -r /home/aldo/dotfiles/config/redshift/ /home/aldo/.config/
  cp -r /home/aldo/dotfiles/wallpapers/ /home/aldo/
- cp -r /home/aldo/dotfiles/config/sxhkd /home/aldo/.config/
+ cp -r /home/aldo/dotfiles/config/sxhkd/ /home/aldo/.config/
  cp -r /home/aldo/dotfiles/config/.icons/ /home/aldo/
  cp -r /home/aldo/dotfiles/config/gtk-3.0/ /home/aldo/.config/
  cp -r /home/aldo/dotfiles/config/nvim/ /home/aldo/.config/
@@ -30,9 +30,6 @@ sudo xbps-install -Su
 
   sudo rm -rf /var/service/wpa_supplicant
   sudo rm -rf /var/service/dhcpcd
-  
-  #exec
-  chmod +rx /home/aldo/.dwmbar
 
   #font in tty
   sudo sed -i 's/#FONT="lat9w-16"/FONT="ter-v32n"/g' /etc/rc.conf

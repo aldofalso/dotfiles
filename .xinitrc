@@ -24,7 +24,7 @@ unclutter &
 clipmenud &
 
 #dwmbar
-~/.dwmbar &
+~/.config/dwmbar &
 
 #dbus
 dbus-launch --exit-with-session dwm
