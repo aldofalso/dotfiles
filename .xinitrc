@@ -17,6 +17,12 @@ xss-lock -- /usr/bin/slock &
 #keybinds
 sxhkd &
 
+#remove mouse when idle
+unclutter &
+
+#dmenuclipboard
+clipmenud &
+
 #dwmbar
 ~/.dwmbar &
 

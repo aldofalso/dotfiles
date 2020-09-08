@@ -1,0 +1,11 @@
+chosen=$(echo -e "[Cancel]\nSuspend\nPoweroff\nReboot" | dmenu -fn Terminus:size=14.3)
+
+if [[ $chosen = "Suspend" ]]; then
+	loginctl suspend
+
+elif [[ $chosen = "Poweroff" ]]; then
+	loginctl poweroff
+
+elif [[ $chosen = "Reboot" ]]; then
+	loginctl reboot
+fi
