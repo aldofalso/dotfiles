@@ -5,11 +5,11 @@ alt + c
       chromium
 
 #dmenulogout
-alt + Insert
+alt + Escape
       dmenulogout
 
 #screenshot
-alt + shift + Delete
+alt + Insert
       scrot
 
 #increase volume
@@ -26,4 +26,4 @@ alt + Delete
 
 #dmenuclipboard
 alt + o 
-      clipmenu -fn Terminus:size=14.3
+      clipmenu -i -fn Terminus:size=14.3
