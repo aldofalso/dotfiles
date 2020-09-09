@@ -10,7 +10,7 @@ sudo xbps-install -Su
  #config files
  cp -r /home/aldo/dotfiles/.config /home/aldo/ 
  sudo cp -r /home/aldo/dotfiles/rules/49-nopasswd_global.rules /etc/polkit-1/rules.d/
- sudo cp -r /home/aldo/dotfiles/scripts/dmenulogout /usr/local/bin/
+ sudo cp /home/aldo/dotfiles/scripts/* /usr/local/bin
  cp -r /home/aldo/dotfiles/.xinitrc /home/aldo/
  cp -r /home/aldo/dotfiles/.bashrc /home/aldo/
  cp -r /home/aldo/dotfiles/wallpapers/ /home/aldo/
