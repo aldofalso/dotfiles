@@ -6,7 +6,7 @@ alt + c
 
 #dmenulogout
 alt + Escape
-      dmenulogout
+      quit
 
 #screenshot
 alt + Insert
