@@ -1,3 +1,7 @@
+#!/bin/bash
+#quit dwm
+
+
 chosen=$(echo -e "Cancel\nSuspend\nLock\nPoweroff\nReboot" | dmenu -i -fn Terminus:size=14.3)
 
 if [ $chosen = "Suspend" ]; then
