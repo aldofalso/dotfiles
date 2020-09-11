@@ -30,8 +30,7 @@ sudo xbps-install -Su
   git clone https://github.com/aldofalso/dwm
   git clone https://github.com/aldofalso/st
   git clone https://github.com/aldofalso/slstatus
-  git clone https://github.com/aldofalso/scroll
 
-  cd st && sudo make clean install && cd .. && cd dwm && sudo make clean install && cd .. && cd slstatus && sudo make clean install && cd .. && cd scroll && sudo make clean install && cd ..
+  cd st && sudo make clean install && cd .. && cd dwm && sudo make clean install && cd .. && cd slstatus && sudo make clean install
 
  #done
