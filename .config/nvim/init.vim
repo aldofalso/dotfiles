@@ -6,3 +6,6 @@ set laststatus=0
 set showtabline=2
 set guicursor=a:blinkon100
 set noswapfile
+set smarttab                            
+set smartindent                      
+set autoindent
