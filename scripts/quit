@@ -2,7 +2,7 @@
 #quit dwm
 
 
-chosen=$(echo -e "Cancel\nSuspend\nLock\nPoweroff\nReboot" | dmenu -i -fn Terminus:size=14.3)
+chosen=$(echo -e "Cancel\nSuspend\nLock\nReboot\nPoweroff" | dmenu -i -fn Terminus:size=14.3)
 
 if [ $chosen = "Suspend" ]; then
 	loginctl suspend
@@ -10,9 +10,9 @@ if [ $chosen = "Suspend" ]; then
 elif [ $chosen = "Lock" ]; then
         slock
 
-elif [ $chosen = "Poweroff" ]; then
-	loginctl poweroff
-
 elif [ $chosen = "Reboot" ]; then
 	loginctl reboot
+
+elif [ $chosen = "Poweroff" ]; then
+	loginctl poweroff
 fi

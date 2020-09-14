@@ -11,4 +11,4 @@ alias reboot='loginctl reboot'
 alias poweroff='loginctl poweroff'
 alias suspend='loginctl suspend'
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1="\[\e[32m\]\w\[\e[m\]\[\e[32m\]\\$\[\e[m\] "
