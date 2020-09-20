@@ -1,0 +1,17 @@
+#!/bin/bash
+#powermenu
+
+chosen=$(echo -e "Cancel\nSuspend\nLock\nReboot\nPoweroff" | dmenu -i -fn Terminus:size=15)
+
+if [[ $chosen = "Suspend" ]]; then
+	loginctl suspend
+
+elif [[ $chosen = "Lock" ]]; then
+        slock
+
+elif [[ $chosen = "Reboot" ]]; then
+	loginctl reboot
+
+elif [[ $chosen = "Poweroff" ]]; then
+	loginctl poweroff
+fi

@@ -4,9 +4,9 @@
 alt + c
       chromium
 
-#quit dwm
+#powermenu
 alt + Escape
-      quit
+      powermenu 
 
 #screenshot
 alt + Insert
@@ -14,11 +14,11 @@ alt + Insert
 
 #increase volume
 alt + Page_Up
-      amixer sset Master 5%+
+      amixer sset Master 5%+; exec dunstify 'Volume up'  "amixer -M sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1"
 
 #decrease volume
 alt + Page_Down
-      amixer sset Master 5%-
+      amixer sset Master 5%-; exec notify-send 'Volume down'
 
 #mute
 alt + Delete 
