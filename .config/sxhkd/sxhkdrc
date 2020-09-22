@@ -1,8 +1,12 @@
-#hotkeys
+#sxhkd
 
 #browser
 alt + c
       chromium
+
+#terminal
+alt + shift + Return
+      urxvt
 
 #powermenu
 alt + Escape
