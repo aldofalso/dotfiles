@@ -6,7 +6,7 @@
 feh --bg-scale /home/aldo/wallpapers/wall.jpg &
 
 #picom
-picom -f -D 5 -I 0.03 -O 0.03 &
+picom -c -f -D 5 -I 0.03 -O 0.03 --vsync &
 
 #redshift
 redshift &
