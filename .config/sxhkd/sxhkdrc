@@ -18,12 +18,10 @@ alt + Insert
 
 #increase volume
 alt + Page_Up
-      amixer sset Master 5%+; exec dunstify 'Volume up'  "amixer -M sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1"
-
+      amixer sset Master 5%+
 #decrease volume
 alt + Page_Down
-      amixer sset Master 5%-; exec notify-send 'Volume down'
-
+      amixer sset Master 5%-
 #mute
 alt + Delete 
       {amixer sset Master mute, amixer sset Master unmute}

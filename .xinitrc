@@ -3,7 +3,7 @@
 ## ~/.xinitrc
 
 #wallpaper
-feh --bg-scale /home/aldo/wallpapers/wall.jpg &
+feh --bg-scale ~/wallpapers/wall.jpg &
 
 #picom
 picom -c -f -D 5 -I 0.03 -O 0.03 --vsync &
