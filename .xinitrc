@@ -1,6 +1,4 @@
 #!/bin/sh
-##
-## ~/.xinitrc
 
 #wallpaper
 feh --bg-scale ~/wallpapers/wall.jpg &

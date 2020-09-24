@@ -1,4 +1,5 @@
-!--------------------xdefauls
+!! xdefauls
+
 URxvt.font: xft:terminus:pixelsize=20
 urxvt*scrollBar: false
 urxvt*matcher.button: 1

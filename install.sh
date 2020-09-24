@@ -1,6 +1,5 @@
 #!/bin/sh
-##
-# ~/install.sh
+# install.sh
 
 sudo xbps-install -Su
 
