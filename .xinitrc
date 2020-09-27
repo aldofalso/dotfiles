@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #wallpaper
-feh --bg-scale ~/wallpapers/wall.jpg &
+feh --bg-scale ~/.config/wall.jpg &
 
 #picom
 picom -c -f -D 5 -I 0.03 -O 0.03 --vsync &

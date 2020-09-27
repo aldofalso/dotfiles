@@ -13,7 +13,6 @@ sudo cp ~/dotfiles/scripts/* /usr/local/bin
 cp -r ~/dotfiles/.xinitrc ~/
 cp -r ~/dotfiles/.bashrc ~/
 cp -r ~/dotfiles/.Xdefaults ~/
-cp -r ~/dotfiles/wallpapers/ ~/
 cp -r ~/dotfiles/.config/.icons/ ~/
 
 #font in tty
@@ -32,4 +31,4 @@ sudo ln -s /etc/sv/dbus/ /var/service
 sudo rm -rf /var/service/wpa_supplicant
 sudo rm -rf /var/service/dhcpcd
 
-#done
+echo done
