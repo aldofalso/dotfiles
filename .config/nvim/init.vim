@@ -1,3 +1,4 @@
+source $HOME/.config/nvim/vim-plug/plugins.vim
 
 set encoding=utf-8				"encoding 
 set number					"set number
@@ -9,16 +10,14 @@ set smarttab                    		"smart tab
 set smartindent                 		"smart indent
 set autoindent					"auto indent
 set fileformat=unix				"file format
-set laststatus=2
-set statusline=
-set statusline+=%F
-set statusline+=\ 
-set statusline+=%y
-set statusline+=\ 
-set statusline+=%m
-set statusline+=%=
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}]
-set statusline+=\ 
-set statusline+=[%{&ff}]
-set statusline+=\ 
-set statusline+=%l/%L
+
+" airline config
+let g:airline_theme='base16_gruvbox_dark_hard'
+let g:airline_section_z ="%3l/%L:%2v"
+let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#bufferline#left_sep = ""
+let g:airline#extensions#bufferline#right_sep = ""
+let g:airline#extensions#bufferline#left_alt_sep =""
+let g:airline#extensions#bufferline#right_alt_sep = ""
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#ale#enabled = 1 

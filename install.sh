@@ -14,6 +14,7 @@ cp -r ~/dotfiles/.xinitrc ~/
 cp -r ~/dotfiles/.bashrc ~/
 cp -r ~/dotfiles/.Xdefaults ~/
 cp -r ~/dotfiles/.config/.icons/ ~/
+cp -r ~/dotfiles/.themes/ ~/
 
 #font in tty
 sudo sed -i 's/#FONT="lat9w-16"/FONT="ter-v32n"/g' /etc/rc.conf
@@ -21,8 +22,9 @@ sudo sed -i 's/#FONT="lat9w-16"/FONT="ter-v32n"/g' /etc/rc.conf
 #suckless
 git clone https://github.com/aldofalso/dwm
 git clone https://github.com/aldofalso/slstatus
+git clone https://github.com/aldofalso/dmenu
 
-cd dwm && sudo make clean install && cd .. && cd slstatus && sudo make clean install && cd ~/
+cd dwm && sudo make clean install && cd .. && cd slstatus && sudo make clean install && cd .. && cd dmenu && sudo make clean install && cd ~
 
 #autostart
 sudo ln -s /etc/sv/NetworkManager /var/service

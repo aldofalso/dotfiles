@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Gruvbox
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Gruvbox
+GtkTheme=Gruvbox
+IconTheme=Gruvbox
