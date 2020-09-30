@@ -17,6 +17,7 @@ URxvt*tintColor: #ffffff
 URxvt*shading: 0
 URxvt*inheritPixmap: False
 URxvt.cursorBlink: 1
+
 ! special
 *.foreground:   #ebdbb2
 *.background:   #282828

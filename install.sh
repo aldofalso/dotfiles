@@ -43,6 +43,6 @@ sudo rm -rf /var/service/wpa_supplicant
 sudo rm -rf /var/service/dhcpcd
 
 #change shell
-usermod --shell /bin/zsh "$name"
+usermod --shell /bin/zsh "$USER"
 
 echo done
