@@ -11,7 +11,7 @@ cp -r ~/dotfiles/.config ~/
 sudo cp -r ~/dotfiles/rules/49-nopasswd_global.rules /etc/polkit-1/rules.d/
 sudo cp ~/dotfiles/scripts/* /usr/local/bin
 cp -r ~/dotfiles/.xinitrc ~/
-cp -r ~/dotfiles/.bashrc ~/
+cp -r ~/dotfiles/.zshrc ~/
 cp -r ~/dotfiles/.Xdefaults ~/
 cp -r ~/dotfiles/.config/.icons/ ~/
 cp -r ~/dotfiles/.themes/ ~/
@@ -19,12 +19,21 @@ cp -r ~/dotfiles/.themes/ ~/
 #font in tty
 sudo sed -i 's/#FONT="lat9w-16"/FONT="ter-v32n"/g' /etc/rc.conf
 
+#zsh stuff
+git clone https://github.com/zsh-users/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/denysdovhan/spaceship-prompt
+
+mv ~/dotfiles/zsh-users/zsh-syntax-highlighting ~/.config
+mv ~/dotfiles/zsh-users/zsh-autosuggestions ~/.config
+mv ~/dotfiles/spaceship-prompt ~/.config
+
 #suckless
 git clone https://github.com/aldofalso/dwm
 git clone https://github.com/aldofalso/slstatus
 git clone https://github.com/aldofalso/dmenu
 
-cd dwm && sudo make clean install && cd .. && cd slstatus && sudo make clean install && cd .. && cd dmenu && sudo make clean install && cd ~
+cd ~/dotfiles/dwm && sudo make clean install && cd .. && cd slstatus && sudo make clean install && cd .. && cd dmenu && sudo make clean install && cd ~
 
 #autostart
 sudo ln -s /etc/sv/NetworkManager /var/service
@@ -32,5 +41,8 @@ sudo ln -s /etc/sv/dbus/ /var/service
 
 sudo rm -rf /var/service/wpa_supplicant
 sudo rm -rf /var/service/dhcpcd
+
+#change shell
+usermod --shell /bin/zsh "$name"
 
 echo done
