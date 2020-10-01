@@ -1,4 +1,3 @@
-
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading plugins..."
 	silent !mkdir -p ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/
@@ -8,10 +7,10 @@ endif
 
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 
-      Plug 'itchyny/lightline.vim'
-      Plug 'morhetz/gruvbox'
-      Plug 'jiangmiao/auto-pairs'
-      Plug 'ap/vim-css-color'
+      Plug 'bling/vim-airline' "airline
+      Plug 'morhetz/gruvbox' "gruvbox
+      Plug 'jiangmiao/auto-pairs' "auto pairs for ()
+      Plug 'ap/vim-css-color' "css colors
 
 call plug#end()
 
@@ -25,8 +24,6 @@ set smarttab                    		"smart tab
 set smartindent                 		"smart indent
 set autoindent					"auto indent
 set fileformat=unix				"file format
-
-"colorscheme config
-let g:lightline = { 'colorscheme': 'gruvbox', }
-
-colorscheme gruvbox
+set noshowmode					"noshowmode
+colorscheme gruvbox				"colorscheme
+let g:airline#extensions#whitespace#enabled = 0 "disable whitespace
