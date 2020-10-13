@@ -28,4 +28,4 @@ alt + Delete
 
 #dmenu clipboard
 alt + o 
-      clipmenu -i -fn Terminus:size=15
+      clipmenu -i -fn spleen:size=20

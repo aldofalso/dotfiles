@@ -1,10 +1,10 @@
 !! xdefauls
 
-URxvt.font: xft:terminus:pixelsize=20
+URxvt.font: xft:spleen:pixelsize=20
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
 urxvt.transparent: false 
-urxvt.boldFont: true
+urxvt.boldFont: 
 Xft*dpi: 96
 Xft*antialias: true
 Xft*hinting: true

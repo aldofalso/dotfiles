@@ -4,7 +4,7 @@
 sudo xbps-install -Su
 
 #packages
-sudo xbps-install slock dmenu xsel unclutter-xfixes xorg-minimal xorg-video-drivers xinit xorg-server xss-lock alsa-utils alsa-lib pcmanfm file-roller gvfs gvfs-mtp feh scrot mpv ufetch picom dejavu-fonts-ttf redshift gimp libreoffice man android-tools chromium telegram-desktop git youtube-dl ffmpeg psmisc cmatrix htop qemu bash-completion neovim lm_sensors mesa-vaapi mesa-vdpau vulkan-loader amdvlk NetworkManager curl elogind sxhkd galculator-gtk3 breeze-snow-cursor-theme gnome-themes-standard breeze-icons base-devel libX11-devel libXft-devel libXinerama-devel terminus-font noto-fonts-emoji go-mtpfs clipmenu clipnotify rxvt-unicode zsh
+sudo xbps-install slock dmenu xsel unclutter-xfixes xorg-minimal xorg-video-drivers xinit xorg-server xss-lock alsa-utils alsa-lib pcmanfm file-roller gvfs gvfs-mtp feh scrot mpv ufetch picom dejavu-fonts-ttf redshift gimp libreoffice man android-tools chromium telegram-desktop git youtube-dl ffmpeg psmisc cmatrix htop qemu bash-completion neovim lm_sensors mesa-vaapi mesa-vdpau vulkan-loader amdvlk NetworkManager curl elogind sxhkd galculator-gtk3 breeze-snow-cursor-theme gnome-themes-standard breeze-icons base-devel libX11-devel libXft-devel libXinerama-devel font-spleen noto-fonts-emoji go-mtpfs clipmenu clipnotify rxvt-unicode zsh
 
 #config files
 cp -r ~/dotfiles/.config ~/ 
@@ -17,7 +17,7 @@ cp -r ~/dotfiles/.config/.icons/ ~/
 cp -r ~/dotfiles/.themes/ ~/
 
 #font in tty
-sudo sed -i 's/#FONT="lat9w-16"/FONT="ter-v32n"/g' /etc/rc.conf
+sudo sed -i 's/#FONT="lat9w-16"/FONT="spleen-16x32"/g' /etc/rc.conf
 
 #zsh stuff
 git clone https://github.com/zsh-users/zsh-syntax-highlighting
