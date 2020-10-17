@@ -6,7 +6,7 @@ alt + c
 
 #terminal
 alt + shift + Return
-      urxvt
+      xst
 
 #powermenu
 alt + Escape
