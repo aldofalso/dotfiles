@@ -21,6 +21,9 @@ unclutter &
 #dmenuclipboard
 clipmenud &
 
+#load xresources
+xrdb -merge ~/.Xresources
+
 #dwmbar
 slstatus &
 

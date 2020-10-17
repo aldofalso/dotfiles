@@ -20,7 +20,6 @@ call plug#end()
 " --- VIM SETTINGS ---
 
 let g:airline_powerline_fonts = 1
-set guicursor+=a:blinkon1
 set cursorline
 set termguicolors
 set encoding=utf-8
