@@ -1,12 +1,11 @@
-!! xdefauls
+!! Xresources
 
-st.termname:     xst-256color
-
-st.blinktimeout:      800
+st.termname: xst-256color
+st.blinktimeout: 800
 st.font: spleen:pixelsize=20
 st.cursorblinkontype: 1
-
 st.cursorblinkstyle: 1 
+
 ! special
 *.foreground:   #ebdbb2
 *.background:   #282828
