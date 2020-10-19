@@ -2,9 +2,11 @@
 
 st.termname: xst-256color
 st.blinktimeout: 800
-st.font: spleen:pixelsize=20
-st.cursorblinkontype: 1
-st.cursorblinkstyle: 1 
+st.font: spleen:pixelsize=20:antialias=true:autohint=true;
+st.cursorshape: 1
+st.cursorblinkontype: 0 
+st.scrollrate: 3
+st.borderpx: 24
 
 ! special
 *.foreground:   #ebdbb2
