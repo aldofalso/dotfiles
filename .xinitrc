@@ -22,7 +22,7 @@ unclutter &
 clipmenud &
 
 #load xresources
-xrdb -merge ~/.Xresources 
+xrdb -merge ~/.Xresources & 
 
 #dwmbar
 slstatus &
