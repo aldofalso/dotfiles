@@ -4,7 +4,7 @@
 redshift &
 
 #lock
-xset dpms 180 &
+xset dpms 300 &
 xss-lock -- /bin/slock &
 
 #keybinds
@@ -16,5 +16,8 @@ volumeicon &
 
 #dwmbar
 slstatus &
+
+#winxp startup sound
+aplay ~/.config/winxp.wav &
 
 exec dwm

@@ -1,5 +1,5 @@
-# https://s.natalian.org/2020-12-13/bitmap-vs-ttf.png
-# https://s.natalian.org/2020-12-13/htop-bitmap-vs-ttf.png
+#alacritty conf
+
 font:
   bold:
     family: Terminus
@@ -15,11 +15,6 @@ font:
     style: Regular
   size: 12
 
-key_bindings:
-  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
-  - { key: F,   mods: Control,           action: SearchForward    }
-  - { key: V,   mods: Control,           action: Paste }
-
 selection:
   save_to_clipboard: true
 
@@ -27,8 +22,6 @@ window:
   padding:
         x: 12
         y: 12
-
-
 cursor:
     style: Underline
 

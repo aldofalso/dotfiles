@@ -1,7 +1,7 @@
 #!/bin/sh
 #install.sh
 
-sudo pacman -Sy gvfs gvfs-mtp alsa-lib alsa pulseaudio pulseaudio-alsa volumeicon networkmanager network-manager-applet brightnessctl slock xss-lock feh scrot ttf-dejavu redshift acpi sxhkd dmenu alacritty libx11 libxinerama libxft webkit2gtk vim git thunar go 
+sudo pacman -Sy gvfs gvfs-mtp alsa-lib alsa alsa-utils pulseaudio pulseaudio-alsa volumeicon networkmanager network-manager-applet brightnessctl slock xss-lock feh scrot ttf-dejavu redshift acpi sxhkd dmenu alacritty libx11 libxinerama libxft webkit2gtk vim git thunar go 
 
 #config files
 cp -r ~/dotfiles/.config ~/ 
