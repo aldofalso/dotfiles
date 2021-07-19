@@ -2,11 +2,11 @@
 # powermenu
 
 powermenu="\
-zzzz		loginctl suspend
+zzzz		systemctl suspend
 lock		slock	
-reboot		loginctl reboot 
-shutdown	loginctl poweroff"
+reboot		systemctl reboot 
+shutdown	systemctl poweroff"
 
-choice="$(echo "$powermenu" | cut -d'	' -f 1 | dmenu -i -fn spleen:size=15)" 
+choice="$(echo "$powermenu" | cut -d'	' -f 1 | dmenu -i -fn monospace:size=12)" 
 
 `echo "$powermenu" | grep "^$choice	" | cut -d '	' -f2-`

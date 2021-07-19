@@ -1,33 +1,20 @@
 #!/bin/sh
 
-#wallpaper
-feh --bg-scale ~/.config/wall.jpg &
-
-#picom
-picom -c -f -D 5 -I 0.03 -O 0.03 --vsync &
-
 #redshift
 redshift &
 
 #lock
-xss-lock -- /usr/bin/slock &
+xset dpms 180 &
+xss-lock -- /bin/slock &
 
 #keybinds
 sxhkd &
 
-#remove cursor when idle
-unclutter &
-
-#dmenuclipboard
-clipmenud &
-
-#load xresources
-xrdb -merge ~/.Xresources & 
+#applets
+nm-applet &
+volumeicon &
 
 #dwmbar
 slstatus &
-
-#dbus
-dbus-launch --exit-with-session dwm
 
 exec dwm

@@ -1,31 +1,24 @@
 #sxhkd
 
 #browser
-alt + c
+mod4 + c
       chromium
 
 #terminal
-alt + shift + Return
-      xst
+mod4 + shift + Return
+     kitty 
 
 #powermenu
-alt + Escape
+mod4 + Escape
       powermenu 
 
 #screenshot
-alt + Insert
-      sleep 1 && scrot -s -e 'feh $f' 
+mod4 + Insert
+      scrot
 
-#increase volume
-alt + Page_Up
-      amixer sset Master 5%+
-#decrease volume
-alt + Page_Down
-      amixer sset Master 5%-
-#mute
-alt + Delete 
-      {amixer sset Master mute, amixer sset Master unmute}
+#brightness
+XF86MonBrightnessDown
+	brightnessctl set 5%-
 
-#dmenu clipboard
-alt + o 
-      clipmenu -i -fn spleen:size=15
+XF86MonBrightnessUp
+	brightnessctl set 5%+
