@@ -8,6 +8,10 @@ mod4 + c
 mod4 + shift + Return
      alacritty 
 
+#dmenu clipboard
+mod4 + o
+	clipmenu -i -fn terminus:size=14
+
 #powermenu
 mod4 + Escape
       powermenu 

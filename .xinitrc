@@ -1,11 +1,12 @@
 #!/bin/sh
+#.xinitrc
 
 #redshift
 redshift &
 
 #lock
 xset dpms 300 &
-xss-lock -- /bin/slock &
+xss-lock -- /usr/bin/slock &
 
 #keybinds
 sxhkd &
@@ -16,6 +17,12 @@ volumeicon &
 
 #dwmbar
 slstatus &
+
+#dmenu clipboard
+clipmenud &
+
+#remove cursor when idle
+unclutter &
 
 #winxp startup sound
 aplay ~/.config/winxp.wav &
