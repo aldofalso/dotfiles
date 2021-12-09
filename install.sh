@@ -1,4 +1,4 @@
-bin/sh
+#!/bin/sh
 # nix config files
 
 sudo apt install i3 xss-lock brightnessctl xwallpaper redshift arandr vim chromium htop neofetch blueman scrot lm-sensors acpi tlp intel-microcode build-essential
