@@ -1,4 +1,5 @@
 set encoding=utf-8
+syntax on
 set number
 set mouse=a
 set smarttab

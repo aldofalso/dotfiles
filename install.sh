@@ -1,13 +1,13 @@
-#!/bin/sh
-#install.sh
+bin/sh
+# nix config files
 
-sudo apt install i3 xss-lock brightnessctl xwallpaper clipit redshift arandr vim chromium
+sudo apt install i3 xss-lock brightnessctl xwallpaper redshift arandr vim chromium htop neofetch blueman scrot lm-sensors acpi tlp intel-microcode build-essential
 
-#config files
+# config files
 cp -r ~/dotfiles/.config ~/ 
 cp ~/dotfiles/.vimrc ~/
 
-#trackpad
+# trackpad
   sudo mkdir -p /etc/X11/xorg.conf.d && sudo tee <<'EOF' /etc/X11/xorg.conf.d/90-touchpad.conf 1> /dev/null
 Section "InputClass"
         Identifier "touchpad"

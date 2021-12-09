@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 9
+font pango:monospace 10 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -32,7 +32,7 @@ exec --no-startup-id nm-applet
 
 # auto start
 exec --no-startup-id redshift
-exec --no-startup-id clipit
+exec --no-startup-id blueman-applet
 exec --no-startup-id xwallpaper --zoom ~/.config/wallpaper.jpg
 exec --no-startup-id aplay ~/.config/winxp.wav &
 
@@ -194,7 +194,7 @@ bar {
 }
 
 # exit menu
-mode "exit: [l]ock, [z]Zz, [r]eboot, [s]hutdown" {
+mode "exit: [l]ock, [q]uit, [z]Zz, [r]eboot, [s]hutdown" {
 
   bindsym l exec i3lock -c 000000
 
@@ -202,7 +202,9 @@ mode "exit: [l]ock, [z]Zz, [r]eboot, [s]hutdown" {
 
   bindsym r exec systemctl reboot
 
-  bindsym s exec systemctl shutdown
+  bindsym s exec systemctl poweroff
+
+  bindsym q exec killall i3
 
   bindsym Escape mode "default"
 
@@ -210,10 +212,11 @@ mode "exit: [l]ock, [z]Zz, [r]eboot, [s]hutdown" {
 
 }
 
-bindsym $mod+Escape mode "exit: [l]ock, [z]Zz, [r]eboot, [s]hutdown"
+bindsym $mod+Escape mode "exit: [l]ock, [q]uit, [z]Zz, [r]eboot, [s]hutdown"
 
 #keybinds
-
 #chromium
 bindsym $mod+c exec chromium
 
+#screenshot
+bindsym $mod+Print exec scrot
