@@ -31,7 +31,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 000000 --nofork
 exec --no-startup-id nm-applet
 
 # auto start
-exec --no-startup-id redshift
+exec --no-startup-id sct 3000
 exec --no-startup-id blueman-applet
 exec --no-startup-id xwallpaper --zoom ~/.config/wallpaper.jpg
 exec --no-startup-id aplay ~/.config/winxp.wav &
