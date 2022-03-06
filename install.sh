@@ -1,7 +1,7 @@
 #!/bin/sh
 # nix config files
 
-sudo apt install -y i3 xss-lock brightnessctl xwallpaper sct arandr vim chromium htop screenfetch blueman scrot lm-sensors acpi tlp intel-microcode build-essential psmisc
+sudo apt install -y i3 xss-lock brightnessctl xwallpaper sct arandr vim htop screenfetch blueman scrot lm-sensors acpi build-essential 
 
 # config files
 cp -r ~/dotfiles/.config ~/ 
